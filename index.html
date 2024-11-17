@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/weather.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet" />
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="weather-app">
+        <header>
+            <form class="search-form" id="search-form">
+                <input type="search" placeholder="Enter a city..." required id="search-form-input"
+                    class="search-form-input" />
+                <input type="submit" value="Search" class="search-form-button" />
+            </form>
+        </header>
+        <main>
+            <div class="weather-app-data">
+                <div>
+                    <h1 class="weather-app-city" id="city"></h1>
+
+                    <p class="weather-app-details">
+                        <span id="time"></span>,
+                        <span id="description"></span>
+                        <br />
+                        Humidity: <strong id="humidity"></strong>, Wind:
+                        <strong id="wind-speed"></strong>
+                    </p>
+                </div>
+                <div class="weather-app-temperature-container">
+                    <div id="icon"></div>
+                    <div class="weather-app-temperature" id="temperature"></div>
+                    <div class="weather-app-unit">°C</div>
+                </div>
+            </div>
+            <div class="weather-forecast" id="forecast"></div>
+
+        </main>
+
+        <footer>
+            Built by
+            <a href="linkedin.com/in/clara-ribeiro-9472772a8" target="_blank">
+                Clara Ribeiro</a>
+        </footer>
+    </div>
+    </div>
+    </div>
+    <script src="src/weather.js" defer></script>
+</body>
+
+</html>
