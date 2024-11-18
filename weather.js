@@ -32,6 +32,7 @@ function updateBackground(description) {
     "overcast": "overcast-clouds", 
     "shower rain": "shower-rain",
     "rain": "rain",
+    "light intensity drizzle rain": "light-rain",
     "moderate rain": "moderate-rain",  
     "light rain": "light-rain",       
     "thunderstorm": "thunderstorm",
